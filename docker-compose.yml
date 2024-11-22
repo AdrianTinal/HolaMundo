@@ -1,0 +1,7 @@
+Version: '3.8'
+  services:
+  
+ web:
+  image: nginx:latest
+  ports: - "80:80"
+  Volumes: - ./index.html:/usr/share/nginx/html/index.html
